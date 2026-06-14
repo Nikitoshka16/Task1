@@ -1,0 +1,21 @@
+[2026-06-14T20:22:37.773+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-14T20:22:37.793+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_analytics_mart.create_student_mart manual__2026-06-14T20:22:36.676111+00:00 [queued]>
+[2026-06-14T20:22:37.806+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_analytics_mart.create_student_mart manual__2026-06-14T20:22:36.676111+00:00 [queued]>
+[2026-06-14T20:22:37.808+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-06-14T20:22:37.840+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): create_student_mart> on 2026-06-14 20:22:36.676111+00:00
+[2026-06-14T20:22:37.851+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'create_analytics_mart', 'create_student_mart', 'manual__2026-06-14T20:22:36.676111+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/create_mart_dag.py', '--cfg-path', '/tmp/tmpxs_docww']
+[2026-06-14T20:22:37.855+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask create_student_mart
+[2026-06-14T20:22:37.856+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=230) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-14T20:22:37.857+0000] {standard_task_runner.py:72} INFO - Started process 231 to run task
+[2026-06-14T20:22:37.916+0000] {task_command.py:467} INFO - Running <TaskInstance: create_analytics_mart.create_student_mart manual__2026-06-14T20:22:36.676111+00:00 [running]> on host 36b51af410db
+[2026-06-14T20:22:38.022+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_analytics_mart' AIRFLOW_CTX_TASK_ID='create_student_mart' AIRFLOW_CTX_EXECUTION_DATE='2026-06-14T20:22:36.676111+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-14T20:22:36.676111+00:00'
+[2026-06-14T20:22:38.023+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-06-14T20:22:38.061+0000] {logging_mixin.py:190} INFO - Подключение к postgres:5432 ...
+[2026-06-14T20:22:38.687+0000] {logging_mixin.py:190} INFO - Витрина обновлена. Записей: 272
+[2026-06-14T20:22:38.688+0000] {logging_mixin.py:190} INFO - Витрина успешно создана/обновлена.
+[2026-06-14T20:22:38.690+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-06-14T20:22:38.699+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-06-14T20:22:38.699+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=create_analytics_mart, task_id=create_student_mart, run_id=manual__2026-06-14T20:22:36.676111+00:00, execution_date=20260614T202236, start_date=20260614T202237, end_date=20260614T202238
+[2026-06-14T20:22:38.756+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-14T20:22:38.769+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-14T20:22:38.772+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
